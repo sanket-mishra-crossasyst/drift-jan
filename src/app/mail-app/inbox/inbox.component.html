@@ -1,0 +1,27 @@
+
+    <div class="inbox-list">
+        <div class="none-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <mat-form-field >
+          <mat-label class="none">None</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let dropdown of dropdowns" [value]="dropdown.value">
+              {{dropdown.value}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field> 
+    </div>
+    <ul>
+        <div class="list-group-item" *ngFor="let value of values">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <span class="hidden" > <input class="star" type="checkbox" title="bookmark page" checked /></span>
+                 <img ngClass="image" [src]="value.image" alt="image">
+                     {{value.name}} | {{value.discription}}
+                 <p class="mail-inbox-discription">{{ value.discription}}</p>
+            </div>     
+        </div>
+    </ul>
+
+            
+
+
+ 

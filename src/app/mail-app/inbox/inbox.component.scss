@@ -1,0 +1,56 @@
+.image{
+    height: 40px;
+    border: none;
+    border-radius: 1rem;
+    margin: 0 1rem 0 0;
+}
+.star {
+    font-size:30px;
+    cursor:pointer;
+    margin-right: 20px;
+    font-size: 29px;
+    margin-top: 20px        ;
+}
+.hidden{
+     visibility:hidden;
+     margin-left: 1rem;
+}
+.star:before {
+   content: "\2605";
+   position: absolute;
+   visibility:visible;
+   color: yellow;
+   font-size: 29px;
+}
+.star:checked:before {
+   content: "\2606";
+   position: absolute;
+   font-size: 29px;
+   color: rgb(0, 0, 0);
+}
+.info{
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0rem 0 0 0;
+    color: grey;
+}
+.none-check{
+   margin-left: 50px;
+   margin-top: 10px;
+}
+.form-check-input{
+    margin-top: 20px;
+    margin-left: 1px;
+}
+.none{
+    padding-left: 10px;
+}
+.mail-inbox-discription{
+    margin-left: 125px;
+}
+.list-group-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 4px;
+}
